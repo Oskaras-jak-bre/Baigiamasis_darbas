@@ -1,0 +1,103 @@
+.contact-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.contact-modal-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.contact-modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #888;
+}
+
+.contact-modal-close-btn:hover {
+  color: #333;
+}
+
+.contact-modal-box h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 22px;
+  color: #1254c4;
+}
+
+.contact-modal-subtitle {
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+.contact-modal-info-line {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+}
+
+.contact-modal-icon {
+  font-size: 24px;
+  color: #1254c4;
+}
+
+.contact-modal-info-line label {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 2px;
+}
+
+.contact-modal-info-line a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-modal-info-line a:hover {
+  text-decoration: underline;
+  color: #1254c4;
+}
+
+.contact-modal-ok-btn {
+  width: 100%;
+  height: 40px;
+  background-color: #1254c4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.contact-modal-ok-btn:hover {
+  background-color: #0c3882;
+}

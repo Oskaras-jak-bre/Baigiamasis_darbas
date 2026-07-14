@@ -1,0 +1,196 @@
+.register-module {
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.register-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  border-radius: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.register-header-zone {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-header-zone h2 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+
+.register-error-text {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.register-success-text {
+  color: #2e7d32;
+  background-color: #e8f5e9;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+
+.register-form {
+  width: 100%;
+}
+
+.register-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.register-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.register-input-field {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.register-input-field:focus,
+.register-textarea:focus {
+  border-color: #1254c4;
+  outline: none;
+}
+
+.register-select {
+  height: 38px;
+  background: white;
+  cursor: pointer;
+}
+
+.register-textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.register-input-description {
+  font-size: 12px;
+  color: #777;
+  align-self: flex-end;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+
+.register-genres-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.register-genre-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+}
+
+.register-genre-checkbox-label input {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.register-btn-zone {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.register-submit-btn {
+  width: 100%;
+  height: 42px;
+  background-color: #1254c4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.register-submit-btn:hover {
+  background-color: #0c3882;
+}
+
+
+.register-has-account-zone {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-has-account-text {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.register-login-link span {
+  color: #1254c4;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.register-login-link span:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 480px) {
+  .register-content {
+    padding: 20px;
+  }
+
+  .register-genres-grid {
+    grid-template-columns: 1fr; /
+  }
+}

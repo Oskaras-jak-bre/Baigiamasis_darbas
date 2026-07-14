@@ -1,0 +1,25 @@
+.product-list-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.product-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  justify-items: center;
+}
+
+@media (max-width: 480px) {
+  .product-list-grid {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,154 @@
+.add-product-page {
+  position: relative;
+  width: 100%;
+}
+
+.add-product-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.add-product-error {
+  color: red;
+  font-weight: 500;
+}
+
+.add-product-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-product-group label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.add-product-input,
+.add-product-select {
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-product-textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.add-product-help-text {
+  color: gray;
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.add-product-submit-btn {
+  padding: 10px 20px;
+  background-color: #1254c4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-product-submit-btn:hover {
+  background-color: #0c3882;
+}
+
+.add-product-submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.upload-success-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+  animation: uploadFadeIn 0.3s ease-out;
+}
+
+.upload-success-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(18, 84, 196, 0.12);
+  max-width: 420px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.success-checkmark {
+  font-size: 48px;
+  margin-bottom: 15px;
+  display: inline-block;
+  animation: uploadSparkle 1.2s ease-in-out infinite alternate;
+}
+
+.upload-success-card h2 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  color: #1254c4;
+}
+
+.upload-success-card p {
+  margin: 0 0 15px 0;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.upload-success-card .redirect-countdown {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+}
+
+@keyframes uploadFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes uploadSparkle {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15);
+  }
+}
+
+@media (max-width: 480px) {
+  .upload-success-card {
+    padding: 30px 20px;
+  }
+  .upload-success-card h2 {
+    font-size: 20px;
+  }
+}
