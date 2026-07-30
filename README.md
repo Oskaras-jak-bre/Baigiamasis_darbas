@@ -29,19 +29,10 @@ This is my web development project which I build using the MERN stack. It is a C
 
 ---
 
-## ⚙️ Local Setup Instructions
+## Local Setup Instructions
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/Oskaras-jak-bre/Baigiamasis_darbas.git](https://github.com/Oskaras-jak-bre/Baigiamasis_darbas.git)
-cd Baigiamasis_darbas
-
-
-
-**Local Setup Instructions**
-
-1. Clone the repository
-
 git clone [https://github.com/Oskaras-jak-bre/Baigiamasis_darbas.git](https://github.com/Oskaras-jak-bre/Baigiamasis_darbas.git)
 cd Baigiamasis_darbas
 
