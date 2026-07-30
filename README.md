@@ -34,36 +34,28 @@ This is my web development project which I build using the MERN stack. It is a C
 
 ```bash
 1. Clone the repository
+
 git clone https://github.com/Oskaras-jak-bre/Baigiamasis_darbas.git
 cd Baigiamasis_darbas
 
 2. Configure & run the Backend
-Bash
 
 cd server
 npm install
 
 Create a .env file in the server directory (refer to .env.example) and supply your environment variables:
-Kodo fragmentas
 
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 
 Start the server:
-Bash
 
 npm start
 
 3. Configure & run the Frontend
-Bash
 
 cd ../client
 npm install
 npm run dev
 
-3. Configure & run the Frontend
-
-cd ../client
-npm install
-npm run dev
